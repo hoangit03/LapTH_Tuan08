@@ -54,6 +54,11 @@ body {
 #search_heder1 {
     border: 1px solid gray;
     border-radius: 8px;
+    display: flex;
+}
+#search_heder1 i{
+    transform: translateY(9px);
+    
 }
 
 #heder_right input {
@@ -133,6 +138,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
 }
 
 #menu_left div p {
@@ -143,9 +149,10 @@ body {
 #menu_right div {
     width: 200px;
     height: 55px;
-    border-radius: 5px;
     height: 50px;
     text-align: center;
+    color: gray;
+   
 }
 
 #menu_left div:hover {
@@ -153,6 +160,7 @@ body {
     background-color: rgba(0, 128, 0, 0.8);
     color: white;
     transition: 1s;
+    
 }
 
 #menu_right {
@@ -165,7 +173,7 @@ body {
 }
 
 .menu_search label {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 17px;
     margin-right: 17px;
     font-size: 20px
@@ -175,6 +183,10 @@ body {
     width: 140px;
     border: none;
     outline: none !important;
+    
+}
+
+.menu_search{
     border-bottom: 1px solid gray;
 }
 
@@ -183,6 +195,14 @@ body {
     transition: 1.5s;
 }
 
+.form-control{
+    border-radius: none;
+    padding: 0;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
 .menu_search input:hover {
     border: none;
 }
@@ -394,6 +414,10 @@ body {
     align-items: center;
 }
 
+
+a.page-link {
+    color: #aba8a8;
+}
 #thanh_truyen .pagination .page-item a:hover {
     background-color: rgba(210, 237, 211, 0.5);
     color: rgb(18, 117, 18);
@@ -461,7 +485,9 @@ body {
     margin-top: 13px;
     display: flex;
 }
-
+#foot_right{
+    margin-top: 100px;
+}
 #foot_subscribe input {
     width: 255px;
     outline: none !important;
